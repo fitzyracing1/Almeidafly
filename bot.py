@@ -6,7 +6,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 def path(env, name): return os.environ.get(env, os.path.join(HERE, name))
 HEADS = "NESW"; DV = {"N": (0, -1), "E": (1, 0), "S": (0, 1), "W": (-1, 0)}
 PRIMS = {"forward", "left", "right", "stop"}
-ALL_LAYERS = ["functions", "hidden_grid", "token_budget", "stuck_fix", "api_cost"]
+ALL_LAYERS = ["functions", "hidden_grid", "token_budget", "api_cost"]
 
 # ---------- layer plumbing ----------
 def layer_names():
